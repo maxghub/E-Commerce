@@ -1,0 +1,140 @@
+:root {
+ --mainBlue:#2a2a72;
+ --lightBlue:#009ffd;
+ --mainWhite:#f3f3f3;
+ --mainDark:#232528;
+ --mainYellow:#ffa400;
+}
+body{
+  font-family:"Anton", sans-serif !important;
+  background:var(--mainWhite) !important;
+  color:var(--mainDark) !important;
+}
+.text-title{
+  font-family: 'Anton', cursive;
+  letter-spacing:0.3rem;
+  text-transform: uppercase; 
+}
+.text-blue{
+  color:var(--mainBlue);
+}
+.text-bright{
+  color:var(--lightBlue);
+}
+.btn-black{
+  background:transparent;
+  text-transform:capitalize;
+  font-size:0.8rem !important;
+  color:var(--mainDark);
+  border-radius: 0 !important;
+  border:0.1rem solid var(--mainDark) !important;
+}
+.btn-black:hover{
+  background:var(--mainDark) !important;
+  color:var(--mainWhite) !important;
+}
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color:var(--mainYellow);
+}
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header img{
+  padding-left: 35px;
+  height: 120px;
+  width: 100px;
+  padding-top: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.menu-bar {
+  background-color: var(--color-black);
+  /* height: 80px;
+  width: 100%; */
+  display: flex;
+  justify-content: center;
+  
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+  /* background-color: rgb(204, 188, 10); */
+
+}
+
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  /* text-align: center; */
+ padding-left: 40px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.menu-bar ul li a {
+  font-size:16px;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s;
+  padding-right: 20px;
+  font-weight: normal;
+}
+
+
+.menu-bar ul li a:hover {
+  color:blue;
+}
+
+
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  /* top: 100%; */
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  /* margin: 10px; */
+}
+.menu-bar ul li .dropdown-menu ul li a{
+  font-size:16px;
+  margin-right: 10px;
+
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding-top: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute; 
+  left: 20px;
+  top: 2px;
+  background-color: var(--color-black);
+}

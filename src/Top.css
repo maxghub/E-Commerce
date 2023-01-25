@@ -1,0 +1,98 @@
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .App-header img{
+    /* padding-left: 55px; */
+    height: 190px;
+    width: 140px;
+    padding-top: 50px;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  .menu-bar {
+    background-color: var(--color-black);
+    /* height: 80px;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+    /* background-color: rgb(204, 188, 10); */
+  
+  }
+  
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    /* text-align: center; */
+   padding-left: 40px;
+    position: relative;
+    padding-right: 10px;
+  }
+  
+  .menu-bar ul li a {
+    font-size:16px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+    padding-right: 40px;
+    font-weight: normal;
+  }
+  
+  
+  .menu-bar ul li a:hover {
+    color:blue;
+  }
+  
+  
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    /* top: 100%; */
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    /* margin: 10px; */
+  }
+  .menu-bar ul li .dropdown-menu ul li a{
+    font-size:16px;
+    margin-right: 10px;
+  
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding-top: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute; 
+    left: 20px;
+    top: 2px;
+    background-color: var(--color-black);
+  }
